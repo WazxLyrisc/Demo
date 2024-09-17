@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Freddy Fazbear's Pizzeria</h2>
+        <nav class="navigation">
+            <a href="#">Home</a> <!--Siêu liên kết-->
+            <a href="#">Pizza</a>
+            <a href="#">Band</a>
+            <a href="#">About</a>
+            <button class="btnLogin-popup">Login</button>
+            <button class="btnLogin-popup">Sign Up</button>
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+        <form action="">  <!--tạo biểu mẫu HTML để người dùng nhập dữ liệu-->
+            <h1>Sign Up</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required> <!--trường nhập văn bản một dòng, định dạng từng loại văn bản-->
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Rewrite Password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="date" required>
+                <i class='bx bx-cake'></i>
+            </div>
+            <div class="input-box">
+                <input type="number" required>
+                <i class='bx bx-phone'></i>
+            </div>
+            <div class="remember-forgot">
+                <label for=""><input type="checkbox">Remember me</label>
+                <a href="#">About</a>
+            </div>
+            <button class="btn" type="submit">Sign Up</button> <!--một nút có thể nhấp được-->
+            <div class="register-link">
+                <p>You have a account? <a href="#">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

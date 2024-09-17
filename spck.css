@@ -1,0 +1,260 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    /*Cỡ chữ */
+    margin: 0;
+    /*tạo khoảng trống xung quanh các thành phần, bên ngoài bất kỳ đường viền nào được xác định.*/
+    padding: 0;
+    /*tạo khoảng trống xung quanh nội dung của phần tử, bên trong bất kỳ đường viền nào được xác định.*/
+    box-sizing: border-box;
+    /*hộp bao quanh mọi phần tử HTML*/
+}
+
+body {
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    display: block;
+    /*chỉ định cách hiển thị một phần tử trên trang web.*/
+    min-height: 100vh;
+    background: #4b8c4d no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    /*Căn chỉnh các mục flex dọc theo trục chính của dòng hiện tại trong vùng chứa flex.*/
+    align-items: center;
+    /*căn chỉnh các mục flex dọc theo trục chéo của dòng hiện tại của vùng chứa flex*/
+    z-index: 99;
+    /*Đối với hộp được định vị, thuộc tính 'z-index' chỉ định cấp độ ngăn xếp của hộp trong ngữ cảnh xếp chồng hiện tại và liệu hộp có thiết lập ngữ cảnh xếp chồng cục bộ hay không.*/
+    background: grey;
+}
+
+.logo {
+    font-size: 23px;
+    color: #fff;
+    user-select: none; /*Kiểm soát giao diện của phần lựa chọn.*/
+}
+
+.logo b {
+    color: brown;
+}
+
+.navigation a {
+    position: relative; /*Thuộc tính CSS position thiết lập cách một phần tử được định vị trong tài liệu. Các thuộc tính top, right, bottom và left xác định vị trí cuối cùng của các phần tử được định vị.*/
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none; /*Trang trí áp dụng cho phông chữ được sử dụng cho văn bản của một phần tử.*/
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+
+.column.middle {
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    width: 80%;
+    border-right: 2px solid #000;
+}
+
+.first h2 {
+    margin-bottom: 50px;
+    margin-top: 200px;
+}
+
+.row-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pps {
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+.row-center .third {
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: grey;
+    outline: 2px solid #000;
+}
+
+.row-center .third img {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.center p {
+    margin-bottom: 50px;
+}
+
+.opacity {
+    margin-top: 25px;
+    opacity: 0.5;
+}
+
+.wide {
+    margin-bottom: 50px;
+    margin-top: 200px;
+}
+
+.lie {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.column.side {
+    color: #fff;
+    display: block;
+    width: 20%;
+    margin-left: 1200px;
+    text-align: left;
+}
+
+/* 
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}  */
+
+footer {
+    background-color: #162938;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons i {
+    color: #fff;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: #fff;
+    transition: 0, 5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #444444;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: #fff;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
